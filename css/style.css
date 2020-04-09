@@ -1,0 +1,325 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body
+{
+    background-color: #000000;
+}
+/* start header */
+/* start navbar */
+header nav h3
+{
+    color: #fff;
+}
+header nav h3 span.ahmed
+{
+    color: #e50914;
+}
+header nav .links a
+{
+    color: #fff !important;
+}
+header nav .links a:hover span
+{
+    border-bottom: 2px solid #e50914;
+    transition: border-bottom .2s .2s;
+}
+header .navbar-toggler-icon
+{
+    background: #fff;
+    color: #000;
+    border: 2px solid #c00409;
+    padding: 15px;
+}
+/* end navbar */
+/* start slider */
+header .slider
+{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+header .slider .img-slider
+{
+    width: 45%;
+    position: absolute;
+    top: 10%;
+    left: 28%;
+}
+@media(max-width:767px){
+    header .slider .img-slider
+    {
+        width:80%;
+        left: 10%;
+    }
+}
+.slider .info-h3
+{
+    color: #fff;
+    text-align: center;
+}
+.slider .info-h3 span
+{
+    color: #e50914;
+}
+/* end slider */
+
+/* start about me */
+section.about-me
+{
+    padding-top: 60px;
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+}
+section.about-me h3
+{
+    color: #e50914;
+}
+section.about-me p
+{
+    margin-top: 10px;
+}
+section.skills
+{
+    margin-top: 60px;
+    text-align: left;
+}
+.skills h4 span
+{
+    border-bottom: 1px solid #474747;
+    padding-bottom: 2px;
+}
+.skills h6
+{
+    line-height: 2rem;
+    border: 1px solid #474747;
+    padding-left: 6px;
+}
+/* end about me */
+
+/* start services */
+section.services
+{
+    padding-top: 60px;
+    color: #fff;
+    text-align: center;
+}
+section.services h3
+{
+    color: #e50914;
+}
+section.services h5
+{
+    letter-spacing: 2px;
+    margin-top: 13px; 
+}
+.features
+{
+    padding-top: 40px;
+}
+.features i
+{
+    background-color: #c00409;
+    color: #fff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.features h3
+{
+    color: #08526d;
+    font-size: 22px;
+}
+.features p
+{
+    color: #8b999f;
+}
+/* end services */
+
+/* start my projects */
+#projects
+{
+    padding-top: 60px;
+    color: #fff;
+    text-align: center;
+}
+#projects h3
+{
+    color: #e50914;
+}
+
+#projects .row {
+    margin: 0 -1.5rem
+}
+
+#projects .project {
+    position: relative;
+    -ms-flex-preferred-size: 33.333333333%;
+    flex-basis: 33.333333333%;
+    max-width: calc(33.333333333% - 3rem);
+    height: 250px;
+    margin: 2rem 1.5rem;
+    border-radius: 6px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 5px 40px -8px rgba(204, 187, 187, 0.911);
+    box-shadow: 0 5px 40px -8px rgba(241, 234, 234, 0.911);
+    -webkit-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s
+}
+
+@media only screen and (max-width:768px) {
+    #projects .project {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        max-width: calc(50% - 3rem)
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #projects .project {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: calc(100% - 3rem)
+    }
+}
+
+#projects .project a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-transition: all 5s ease-out;
+    -o-transition: all 5s ease-out;
+    transition: all 5s ease-out;
+    text-decoration: none
+}
+
+#projects .project .site-1 {
+    background-image: url("../images/create-website1.png")
+}
+
+#projects .project .site-2 {
+    background-image: url("../images/create-website2.png")
+}
+
+#projects .project .site-3 {
+    background-image: url("../images/create-website3.png")
+}
+#projects .project .site-4 {
+    background-image: url("../images/create-website4.png")
+}
+
+#projects .project .site-5 {
+    background-image: url("../images/create-website5.png")
+}
+
+#projects .project .site-6 {
+    background-image: url("../images/create-website6.png")
+}
+#projects .project .site-7 {
+    background-image: url("../images/create-website7.jpg")
+}
+
+#projects .project .site-8 {
+    background-image: url("../images/create-website8.png")
+}
+
+#projects .project .site-9 {
+    background-image: url("../images/create-website9.png")
+}
+
+#projects .project .site-10 {
+    background-image: url("../images/create-website10.png")
+}
+
+#projects .project .site-11 {
+    background-image: url("../images/create-website11.jpg")
+}
+
+#projects .project .site-12 {
+    background-image: url("../images/create-website12.png")
+}
+
+#projects .project:focus a,
+#projects .project:hover a {
+    background-position: center bottom;
+}
+/* end my project */
+
+/* start footer */
+footer
+{
+    padding-top: 55px;
+    color: #8b999f;
+}
+footer .heading-contact
+{
+    margin-bottom: 33px;
+    color: #c00409;
+}
+@media(max-width:767px)
+{
+    footer .heading-contact{
+        margin-left: 15px;
+    }
+    footer .contact{
+        margin-left: 15px;
+    }
+}
+footer .contact ul
+{
+    margin-bottom: 33px;
+}
+footer .contact ul li
+{
+    margin-bottom: 22px;
+}
+/* copyright */
+.copyright
+{
+    padding: 20px;
+    color: #c00409;
+}
+.copyright .border-footer
+{
+    margin-top: 0 !important;
+    transform: translateY(-20px);
+}
+.copyright ul
+{
+    margin: 0;
+}
+.copyright ul li
+{
+    display: inline-block;
+}
+.copyright ul li a
+{
+    color: #777;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 18px;
+}
+/* ../copyright */
+/* end footer */
+
+
+
+/* start my framework */
+.for-border
+{
+    border-bottom: 2px solid #474747;
+    margin-top: 40px;
+}
+/* end my framework */
