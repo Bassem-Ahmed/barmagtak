@@ -17,7 +17,7 @@ header nav h3
 {
     color: #fff;
 }
-header nav h3 span.ahmed
+header nav h3 span.last-name
 {
     color: #e50914;
 }
@@ -25,11 +25,32 @@ header nav .links a
 {
     color: #fff !important;
 }
-header nav .links a:hover span
+/* for nav links underline style */
+header nav .links a span
 {
-    border-bottom: 2px solid #e50914;
-    transition: border-bottom .2s .2s;
+    display: inline-block;
+    position: relative;
 }
+header nav .links a span:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    visibility: hidden;
+    background-color: #e50914;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+header nav .links a span:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+header nav .links a.active span:before {
+    visibility: visible;
+    width: 100%;
+}
+/* ../for nav links underline style */
 header .navbar-toggler-icon
 {
     background: #fff;
@@ -59,12 +80,16 @@ header .slider .img-slider
         left: 10%;
     }
 }
-.slider .info-h3
+.slider .info-h1
 {
     color: #fff;
     text-align: center;
 }
-.slider .info-h3 span
+.slider .info-h1 h1
+{
+    font-size: 2rem !important;
+}
+.slider .info-h1 span
 {
     color: #e50914;
 }
@@ -96,6 +121,29 @@ section.skills
 {
     border-bottom: 1px solid #474747;
     padding-bottom: 2px;
+}
+section.skills a
+{
+    border: 2px solid #e50914;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 14px 33px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    color: #e50914;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    text-decoration: none;
+    margin: 40px 0;
+}
+section.skills a:hover
+{
+    background-color: #e50914;
+    color: #fff;
 }
 .skills h6
 {
@@ -204,6 +252,29 @@ section.services h5
     transition: all 5s ease-out;
     text-decoration: none
 }
+#projects .project .site-18 {
+    background-image: url("../images/create-website18.png")
+}
+
+#projects .project .site-17 {
+    background-image: url("../images/create-website15.png")
+}
+
+#projects .project .site-16 {
+    background-image: url("../images/create-website16.png")
+}
+
+#projects .project .site-15 {
+    background-image: url("../images/portfolio-html.png")
+}
+
+#projects .project .site-14 {
+    background-image: url("../images/create-website14.png")
+}
+
+#projects .project .site-13 {
+    background-image: url("../images/create-website13.png")
+}
 
 #projects .project .site-1 {
     background-image: url("../images/create-website1.png")
@@ -244,7 +315,7 @@ section.services h5
 }
 
 #projects .project .site-11 {
-    background-image: url("../images/create-website11.jpg")
+    background-image: url("../images/create-website11.png")
 }
 
 #projects .project .site-12 {
@@ -256,6 +327,39 @@ section.services h5
     background-position: center bottom;
 }
 /* end my project */
+
+/* start testemonials */
+.testemonials
+{
+    padding-top: 60px;
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+}
+.testemonials h3
+{
+    color: #e50914;
+}
+.testemonials q
+{
+    color:#D0D0D0;
+    margin-top: 20px;
+    display: block;
+}
+.testemonials i
+{
+    padding-top: 10px;
+    font-size: 18px;
+    color: #8b999f;
+    padding-bottom: 20px;
+    display: block;
+}
+.testemonials .t-slider div:not(:first-child)
+{
+    display: none;
+}
+/* end testemonials */
 
 /* start footer */
 footer
@@ -313,6 +417,35 @@ footer .contact ul li
 }
 /* ../copyright */
 /* end footer */
+
+/* back to top */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+  }
+  
+  .back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: #c00409;
+    color: #fff;
+    transition: all .3s;
+  }
+  
+  .back-to-top i:hover {
+    width: 35px;
+    height: 35px;
+    font-size: 17px;
+  }
+/* ../back to top */
 
 
 
